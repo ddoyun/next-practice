@@ -12,3 +12,17 @@ npm i --save-dev @types/styled-components
 npm install styled-reset
 npm i @next/bundle-analyzer
 ```
+
+## 바벨 대신 SWC 사용하기
+
+### Speedy Web Compiler
+
+> JavaScript 프로젝트의 컴파일과 번들링 모두에 사용될 수 있는 Rust로 제작된 빌드 툴.
+
+- Next.js 12 버전부터는 기본적으로 SWC 컴파일러가 바벨을 대체하도록 설정 됨
+- 바벨이나 Terser보다 매우 빠르다
+
+### 적용
+
+- .babelrc 파일 삭제
+- babel-plugin-styled-components 바벨과 관련된 라이브러리 삭제
