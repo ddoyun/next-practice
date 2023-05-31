@@ -7,9 +7,8 @@ import Document, {
 } from "next/document";
 import { ServerStyleSheet } from "styled-components";
 
-// styled-components 적용할 때 HTML만 로딩되고 스타일은 미적용
-// 코드를 추가해야 서버 사이드 렌더링 시 styled-components 헤더에 주입
-// 즉 서버에서 미리 HTML을 마크업할 때 스타일도 HTML 요소에 녹여냄
+// styled-components 적용할 때 HTML만 로딩되고
+// 스타일은 헤더에 미적용이기 때문에 SRR을 위해 아래 코드 추가
 class MyDocument extends Document {
   static async loadGetInitialProps(ctx: DocumentContext) {
     const sheet = new ServerStyleSheet();
