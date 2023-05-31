@@ -1,4 +1,14 @@
 {
   "presets": ["next/babel"],
-  "plugins": []
+  "plugins": [
+    [
+      // 서버에서 생성하는 해시값과 브라우저에서 생성하는 해시값 맞춰줌
+      "babel-plugin-styled-components",
+      {
+        "fileName": true, // 코드가 포함된 파일명
+        "displayName": true, // 클래스명에 해당 스카일 정보 추가
+        "pure": true // 사용하지 않는 속성 제거
+      }
+    ]
+  ]
 }
