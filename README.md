@@ -20,7 +20,7 @@ npm i @next/bundle-analyzer
 > JavaScript 프로젝트의 컴파일과 번들링 모두에 사용될 수 있는 Rust로 제작된 빌드 툴.
 
 - Next.js 12 버전부터는 기본적으로 SWC 컴파일러가 바벨을 대체하도록 설정 됨
-- 바벨이나 Terser보다 매우 빠르다
+- 바벨이나 Terser보다 빌드 과정이 매우 빠르다
 
 ### 적용
 
